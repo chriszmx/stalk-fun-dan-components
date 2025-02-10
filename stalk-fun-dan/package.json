@@ -1,0 +1,45 @@
+{
+  "name": "stalk-fun-dan",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "rimraf .next && cross-env NODE_ENV=production next build",
+    "build:fast": "rimraf .next && cross-env NODE_ENV=production NEXT_TELEMETRY_DISABLED=1 next build --no-lint",
+    "start": "next start -p 3000",
+    "lint": "next lint",
+    "clean": "rimraf .next node_modules"
+  },
+  "dependencies": {
+    "@privy-io/react-auth": "^2.2.1",
+    "@solana/web3.js": "^1.98.0",
+    "axios": "^1.6.7",
+    "framer-motion": "^12.0.6",
+    "lodash": "^4.17.21",
+    "lucide-react": "^0.475.0",
+    "next": "15.1.6",
+    "qrcode.react": "^4.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hot-toast": "^2.5.1",
+    "react-icons": "^5.0.1",
+    "react-responsive": "^10.0.0",
+    "react-rnd": "^10.4.14",
+    "recharts": "^2.15.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/lodash": "^4.14.202",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "critters": "^0.0.20",
+    "cross-env": "^7.0.3",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.6",
+    "postcss": "^8",
+    "rimraf": "^5.0.5",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
